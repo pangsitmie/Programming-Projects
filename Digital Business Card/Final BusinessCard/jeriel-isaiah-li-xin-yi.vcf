@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+REV:2021-05-03T14:43:30Z
+N;CHARSET=utf-8:黎信義;Jeriel Isaiah;;;
+FN;CHARSET=utf-8:Jeriel Isaiah 黎信義
+TITLE;CHARSET=utf-8:Student
+EMAIL;INTERNET:jeriel@jeriel.com
+TEL;Phone Number:012345678999
+TEL;Fixed Number:012345678999
+TEL;Mobile Number:012345678999
+ADR;WORK;POSTAL;CHARSET=utf-8:;;yuntech;;;;
+END:VCARD

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "jeroendesloovere/vcard": "dev-master"
+    }
+}
