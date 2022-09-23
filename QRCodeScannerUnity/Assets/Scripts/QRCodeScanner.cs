@@ -9,48 +9,81 @@ using UnityEngine.UI;
 
 public class QRCodeScanner : MonoBehaviour
 {
-    [SerializeField]
-    private RawImage _rawImageBackground;
-    [SerializeField]
-    private AspectRatioFitter _aspectRatioFilter;
-    [SerializeField]
-    private TextMeshProUGUI _textOut;
-    [SerializeField]
-    private RectTransform _scanZone;
+    //========================================================================================
+    #region 參數
+    //=================================================================
+    [Header("Reference")]
+    [SerializeField] private RawImage display_rawImage;
+    [SerializeField] private AspectRatioFitter _aspectRatioFilter;
 
+    //=================================================================
     private bool _isCamAvailable;
     private WebCamTexture _cameraTexture;
 
-    // Start is called before the first frame update
+    //=================================================================
+    public event System.Action<string> OnGetResult;//success result
+
+    //=================================================================
+    #endregion
+    //========================================================================================
+    #region UnityEvent
+    //=================================================================
     void Start()
     {
-        SetUpCamera();
+        StartCoroutine(Test());
+        SetCamera();
+
     }
 
-    // Update is called once per frame
+    //=================================================================
     void Update()
     {
+        if (display_rawImage == null)
+        {
+            return;
+        }
         UpdateCameraRender();
+        Scan();
     }
-    private void SetUpCamera()
+
+    //=================================================================
+    #endregion
+    //========================================================================================
+    #region 實作內容
+    //=================================================================
+    IEnumerator Test()
     {
+        yield return new WaitForSeconds(1.0f);
+        OnGetResult?.Invoke("Test");
+    }
+    public bool SetCamera()
+    {
+        //-------------------------------------------------------------
         WebCamDevice[] devices = WebCamTexture.devices;
         if (devices.Length == 0)
         {
             _isCamAvailable = false;
-            return;
+            print("no device");
+            return false;
         }
+
+        //-------------------------------------------------------------
         for (int i = 0; i < devices.Length; i++)
         {
             if (devices[i].isFrontFacing == false)
             {
-                _cameraTexture = new WebCamTexture(devices[i].name, (int)_scanZone.rect.width, (int)_scanZone.rect.height);
+                _cameraTexture = new WebCamTexture(devices[i].name, (int)Screen.width, (int)Screen.height, 60);
             }
+
         }
 
+        //-------------------------------------------------------------
         _cameraTexture.Play();
-        _rawImageBackground.texture = _cameraTexture;
+        display_rawImage.texture = _cameraTexture;
         _isCamAvailable = true;
+        return true;
+
+        //-------------------------------------------------------------
     }
 
     private void UpdateCameraRender()
@@ -63,33 +96,26 @@ public class QRCodeScanner : MonoBehaviour
         _aspectRatioFilter.aspectRatio = ratio;
 
         int orientation = -_cameraTexture.videoRotationAngle;
-        _rawImageBackground.rectTransform.localEulerAngles = new Vector3(0, 0, orientation);
-    }
-    public void OnClickScan()
-    {
-        Scan();
+        display_rawImage.rectTransform.localEulerAngles = new Vector3(0, 0, orientation);
     }
     private void Scan()
     {
         try
         {
-            IBarcodeReader barcodeReader = new BarcodeReader();
+            BarcodeReader barcodeReader = new BarcodeReader();
             Result result = barcodeReader.Decode(_cameraTexture.GetPixels32(), _cameraTexture.width, _cameraTexture.height);
-            if (result != null)
+            if (result == null)
             {
-                _textOut.text = result.Text;
+                Debug.LogWarning("Failed to read qr code");
             }
-            else
-            {
-                _textOut.text = "Failed to read qr code";
-            }
+            OnGetResult?.Invoke(result.Text);
         }
         catch
         {
-            _textOut.text = "Failed in try";
+            Debug.LogError("Failed in try");
         }
     }
-
-
-
+    //=================================================================
+    #endregion
+    //========================================================================================
 }

@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/QRCodeScannerScene.unity
     guid: 4a900ba45c025eb468b391833d71f391
+  - enabled: 1
+    path: Assets/Scenes/GPSScene.unity
+    guid: e7f3d98935c6be745bc62baf9604171a
+  - enabled: 1
+    path: Assets/Scenes/UploadImageScene.unity
+    guid: f6928b64beb6c1f47815de36d9df830a
   m_configObjects: {}

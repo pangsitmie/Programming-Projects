@@ -1,1 +1,1 @@
-C:\Users\Yuki\My project
+C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity

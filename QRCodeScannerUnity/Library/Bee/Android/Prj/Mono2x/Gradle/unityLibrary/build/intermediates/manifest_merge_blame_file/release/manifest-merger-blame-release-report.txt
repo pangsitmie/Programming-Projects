@@ -1,0 +1,164 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="30" />
+10-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+11
+12    <uses-feature android:glEsVersion="0x00030000" />
+12-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:3-52
+12-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:17-49
+13    <uses-feature
+13-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:3-91
+14        android:name="android.hardware.vulkan.version"
+14-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:17-63
+15        android:required="false" />
+15-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:64-88
+16
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:3-65
+17-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:20-62
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:3-77
+18-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:20-74
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:3-77
+19-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:20-74
+20
+21    <uses-feature
+21-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:3-89
+22        android:name="android.hardware.location.gps"
+22-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:17-61
+23        android:required="false" />
+23-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:62-86
+24    <uses-feature
+24-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:3-85
+25        android:name="android.hardware.location"
+25-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:17-57
+26        android:required="false" />
+26-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:58-82
+27
+28    <uses-permission android:name="android.permission.CAMERA" />
+28-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:3-63
+28-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:20-60
+29
+30    <uses-feature
+30-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-83
+31        android:name="android.hardware.camera"
+31-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:17-55
+32        android:required="false" />
+32-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:56-80
+33    <uses-feature
+33-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:3-93
+34        android:name="android.hardware.camera.autofocus"
+34-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:17-65
+35        android:required="false" />
+35-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:66-90
+36    <uses-feature
+36-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:3-89
+37        android:name="android.hardware.camera.front"
+37-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:17-61
+38        android:required="false" />
+38-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:62-86
+39    <uses-feature
+39-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:3-88
+40        android:name="android.hardware.touchscreen"
+40-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:17-60
+41        android:required="false" />
+41-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:61-85
+42    <uses-feature
+42-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:3-99
+43        android:name="android.hardware.touchscreen.multitouch"
+43-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:17-71
+44        android:required="false" />
+44-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:72-96
+45    <uses-feature
+45-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:3-108
+46        android:name="android.hardware.touchscreen.multitouch.distinct"
+46-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:17-80
+47        android:required="false" />
+47-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:81-105
+48
+49    <application android:extractNativeLibs="true" >
+49-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-17:17
+49-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+50        <activity
+50-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
+51            android:name="com.unity3d.player.UnityPlayerActivity"
+51-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
+52            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+52-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:180-361
+53            android:hardwareAccelerated="false"
+53-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:397-432
+54            android:launchMode="singleTask"
+54-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:148-179
+55            android:resizeableActivity="false"
+55-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:362-396
+56            android:screenOrientation="fullUser"
+56-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-147
+57            android:theme="@style/UnityThemeSelector" >
+57-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
+58            <intent-filter>
+58-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+59-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+61-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+62            </intent-filter>
+63
+64            <meta-data
+64-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:7-82
+65                android:name="unityplayer.UnityActivity"
+65-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:18-58
+66                android:value="true" />
+66-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
+67            <meta-data
+67-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
+68                android:name="android.notch_support"
+68-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
+69                android:value="true" />
+69-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
+70        </activity>
+71
+72        <meta-data
+72-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
+73            android:name="unity.splash-mode"
+73-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
+74            android:value="0" />
+74-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
+75        <meta-data
+75-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
+76            android:name="unity.splash-enable"
+76-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
+77            android:value="True" />
+77-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
+78        <meta-data
+78-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
+79            android:name="unity.launch-fullscreen"
+79-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
+80            android:value="True" />
+80-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
+81        <meta-data
+81-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
+82            android:name="unity.allow-resizable-window"
+82-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
+83            android:value="False" />
+83-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
+84        <meta-data
+84-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
+85            android:name="notch.config"
+85-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
+86            android:value="portrait|landscape" />
+86-->C:\Users\Yuki\Documents\GitHub\Programming-Projects\QRCodeScannerUnity\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
+87    </application>
+88
+89</manifest>
